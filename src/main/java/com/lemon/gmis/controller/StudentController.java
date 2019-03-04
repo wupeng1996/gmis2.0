@@ -3,7 +3,6 @@ package com.lemon.gmis.controller;
 import com.lemon.gmis.model.Student;
 import com.lemon.gmis.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

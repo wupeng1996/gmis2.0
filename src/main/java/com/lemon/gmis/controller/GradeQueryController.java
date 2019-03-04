@@ -2,16 +2,13 @@ package com.lemon.gmis.controller;
 
 import com.lemon.gmis.DTO.GradeQuery;
 
-import com.lemon.gmis.model.Student;
-import com.lemon.gmis.DTO.SubjectTeacher;
-import com.lemon.gmis.model.Teacher;
 import com.lemon.gmis.service.impl.GradeQueryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+
 
 @RestController
 public class GradeQueryController {
