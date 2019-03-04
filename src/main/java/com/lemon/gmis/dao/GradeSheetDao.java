@@ -1,17 +1,11 @@
-package com.lemon.gmis.repository;
+package com.lemon.gmis.dao;
 
-import com.lemon.gmis.entity.GradeSheet;
-import com.lemon.gmis.entity.Student;
-import com.lemon.gmis.entity.SubjectTeacher;
-import com.lemon.gmis.entity.Teacher;
+import com.lemon.gmis.model.GradeSheet;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-
-import java.util.List;
 
 //继承JpaRepository来完成对数据库的操作
-public interface GradeSheetRepository extends JpaRepository<GradeSheet,Integer> {
+public interface GradeSheetDao extends JpaRepository<GradeSheet,Integer> {
 
     //根据学科和学年查询成绩(学科平均成绩，最高分，最低分)
     @Query(nativeQuery = true, value = "SELECT g.grade from grade_sheet g, subject s, teacher_subject ts where s.id=ts.subject_id and ts.id=g.teacher_subject_id and ts.school_year = ?1 and s.subject_number = ?2 ")

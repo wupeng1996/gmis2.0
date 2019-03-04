@@ -1,4 +1,4 @@
-package com.lemon.gmis.entity;
+package com.lemon.gmis.model;
 
 import javax.persistence.*;
 

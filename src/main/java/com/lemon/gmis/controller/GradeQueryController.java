@@ -1,11 +1,11 @@
 package com.lemon.gmis.controller;
 
-import com.lemon.gmis.entity.GradeQuery;
+import com.lemon.gmis.DTO.GradeQuery;
 
-import com.lemon.gmis.entity.Student;
-import com.lemon.gmis.entity.SubjectTeacher;
-import com.lemon.gmis.entity.Teacher;
-import com.lemon.gmis.service.GradeQueryService;
+import com.lemon.gmis.model.Student;
+import com.lemon.gmis.DTO.SubjectTeacher;
+import com.lemon.gmis.model.Teacher;
+import com.lemon.gmis.service.impl.GradeQueryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +17,7 @@ import java.util.List;
 public class GradeQueryController {
 
     @Autowired
-    GradeQueryService gradeQueryService;
+    private GradeQueryServiceImpl gradeQueryService;
 
     //根据学年和学科查询成绩(学科平均成绩，最高分，最低分)
     @GetMapping("/director1/{schoolYear}/{subjectNumber}")
@@ -48,26 +48,11 @@ public class GradeQueryController {
         return grade;
     }
 
-    //查询所有学生,支持分页
-    @GetMapping("/studentAll/{page}/{record}")
-    public List<Student> findStudent(@PathVariable("page") Integer page, @PathVariable("record") Integer record){
-        List<Student> studentList = gradeQueryService.findStudent(page, record);
-        return studentList;
-    }
 
-    //查询所有老师,支持分页
-    @GetMapping("/teacherAll/{page}/{record}")
-    public List<Teacher> findTeacher(@PathVariable("page") Integer page, @PathVariable("record") Integer record){
-        List<Teacher> teacherList = gradeQueryService.findTeacher(page, record);
-        return teacherList;
-    }
 
-    //查询所有学科老师
-    @GetMapping("/subjectTeacherAll/{page}/{record}")
-    public List<SubjectTeacher> findSubjectTeacher(@PathVariable("page") Integer page, @PathVariable("record") Integer record){
-        List<SubjectTeacher> subjectTeacherList = gradeQueryService.findSubjectTeacher(page, record);
-        return subjectTeacherList;
-    }
+
+
+
 
 
 
