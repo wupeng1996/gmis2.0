@@ -1,12 +1,14 @@
 package com.lemon.gmis.service.impl;
 
-import com.lemon.gmis.DTO.SubjectTeacher;
+import com.lemon.gmis.dto.SubjectTeacher;
 import com.lemon.gmis.dao.SubjectTeacherDao;
 import com.lemon.gmis.service.SubjectTeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SubjectTeacherServiceImpl implements SubjectTeacherService {
 
 

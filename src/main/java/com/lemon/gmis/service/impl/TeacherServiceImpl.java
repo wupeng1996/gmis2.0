@@ -4,9 +4,11 @@ import com.lemon.gmis.dao.TeacherDao;
 import com.lemon.gmis.model.Teacher;
 import com.lemon.gmis.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TeacherServiceImpl implements TeacherService {
 
     @Autowired

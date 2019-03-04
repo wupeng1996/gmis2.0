@@ -1,6 +1,6 @@
 package com.lemon.gmis.controller;
 
-import com.lemon.gmis.DTO.GradeQuery;
+import com.lemon.gmis.dto.GradeQuery;
 
 import com.lemon.gmis.service.impl.GradeQueryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

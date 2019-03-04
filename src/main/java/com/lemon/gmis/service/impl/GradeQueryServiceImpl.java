@@ -1,15 +1,12 @@
 package com.lemon.gmis.service.impl;
 
-import com.lemon.gmis.DTO.GradeQuery;
-import com.lemon.gmis.DTO.SubjectTeacher;
-import com.lemon.gmis.model.*;
+import com.lemon.gmis.dto.GradeQuery;
 import com.lemon.gmis.dao.*;
 import com.lemon.gmis.service.GradeQueryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
-import java.util.List;
 
 
 @Service

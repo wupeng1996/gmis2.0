@@ -1,4 +1,4 @@
-package com.lemon.gmis.DTO;
+package com.lemon.gmis.dto;
 
 import javax.persistence.*;
 

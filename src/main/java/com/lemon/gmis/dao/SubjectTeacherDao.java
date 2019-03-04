@@ -1,6 +1,6 @@
 package com.lemon.gmis.dao;
 
-import com.lemon.gmis.DTO.SubjectTeacher;
+import com.lemon.gmis.dto.SubjectTeacher;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

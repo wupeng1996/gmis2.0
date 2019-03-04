@@ -1,6 +1,6 @@
 package com.lemon.gmis.controller;
 
-import com.lemon.gmis.DTO.SubjectTeacher;
+import com.lemon.gmis.dto.SubjectTeacher;
 import com.lemon.gmis.service.SubjectTeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

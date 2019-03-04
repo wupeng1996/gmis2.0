@@ -1,11 +1,6 @@
 package com.lemon.gmis.service;
 
-import com.lemon.gmis.DTO.GradeQuery;
-import com.lemon.gmis.model.Student;
-import com.lemon.gmis.DTO.SubjectTeacher;
-import com.lemon.gmis.model.Teacher;
-
-import java.util.List;
+import com.lemon.gmis.dto.GradeQuery;
 
 public interface GradeQueryService {
 

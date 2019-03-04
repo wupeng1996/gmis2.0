@@ -1,6 +1,6 @@
 package com.lemon.gmis.service;
 
-import com.lemon.gmis.DTO.SubjectTeacher;
+import com.lemon.gmis.dto.SubjectTeacher;
 
 import java.util.List;
 
