@@ -20,4 +20,24 @@ public class TeacherServiceImpl implements TeacherService {
         List<Teacher> teacherList = teacherDao.findTeacher(page, record);
         return teacherList;
     }
+
+    //新增老师信息
+    @Override
+    public Teacher saveTeacher(Teacher teacher) {
+        Teacher save = teacherDao.save(teacher);
+        return save;
+    }
+
+    //根据id删除老师信息
+    @Override
+    public void deleteByIdTeacher(Integer id) {
+        teacherDao.deleteById(id);
+    }
+
+    //修改老师信息
+    @Override
+    public Teacher updateTeacher(Teacher teacher) {
+        Teacher update = teacherDao.saveAndFlush(teacher);
+        return update;
+    }
 }

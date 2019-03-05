@@ -4,6 +4,7 @@ import com.lemon.gmis.model.GradeSheet;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+
 //继承JpaRepository来完成对数据库的操作
 public interface GradeSheetDao extends JpaRepository<GradeSheet,Integer> {
 
@@ -22,7 +23,6 @@ public interface GradeSheetDao extends JpaRepository<GradeSheet,Integer> {
     //根据学生学号，学年和学科查询成绩
     @Query(nativeQuery = true, value = "SELECT g.grade from grade_sheet g, subject s, student stu, teacher_subject ts where g.student_id = stu.id and g.teacher_subject_id = ts.id and ts.subject_id = s.id and stu.student_number = ?1 and ts.school_year = ?2 and s.subject_number = ?3 ")
     public Float findStudentAndSchoolYearAndSubject(String studentNumber, String schoolYear, String subjectNumber);
-
 
 
 

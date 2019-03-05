@@ -12,4 +12,6 @@ public interface StudentDao extends JpaRepository<Student,Integer> {
     //查询所有学生,支持分页
     @Query(nativeQuery = true, value = "SELECT * from student limit ?1, ?2")
     public List<Student> findStudent(Integer page, Integer record);
+
+
 }
